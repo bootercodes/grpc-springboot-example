@@ -25,6 +25,7 @@ public class BookStoreServiceImpl extends BookAuthorServiceGrpc.BookAuthorServic
         .setLastName("lName")
         .setGender("M")
         .build();
+    System.out.println(author);
     responseObserver.onNext(author);
     responseObserver.onCompleted();
   }
